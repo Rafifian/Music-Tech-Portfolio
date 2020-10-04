@@ -1,17 +1,82 @@
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf)
+}
+
+@font-face {
+    font-family: garamond;
+    src: url(../fonts/Garamond/EBGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(../fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}
-
-@keyframes link-color {
-    from{color: #c5d1d3;}
-    to{color: #202A25;}
+    font-family: roboto-light;
 }
 
 a {
     color: #c5d1d3;
     text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-image: linear-gradient(#6676A3, #808eb3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.sidebar {
+    flex-grow: 1;
+    width: 50px;
+}
+
+.container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 30px 0 10px 0;
+    font-size: 32px;
+}
+
+.title h1 {
+    font-family: garamond;
+}
+
+.title a {
+    color: #202A25;
+}
+
+.title a:hover {
+    color: #202A25;
 }
 
 .menu a {
@@ -30,32 +95,11 @@ a {
 }
 
 .menu a:hover {
-    color: #ffff;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    background: #808EB3;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-}
-
-.title {
-    margin: 30px 0 20px 30px;
-}
-
-.title a {
-    color: #202A25;
-}
-
-.title a:hover {
-    color: #202A25;
+    color: rgb(243, 243, 243);
 }
 
 .menu ul {
-    margin-left: 10px;
+    margin-left: -20px;
     display: inline-flex;
 }
 
@@ -66,8 +110,46 @@ a {
     cursor: pointer;
 }
 
+.content_container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.content_image {
+    flex-grow: 1;
+}
+
+.content_image img {
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid #202A25;
+}
+
+.content_text_container {
+    flex-grow: 6;
+    display: inline-block;
+    margin: 0 50px 10px;
+}
+
+.content_header h2 {
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.content {
+    display: inline-block;
+}
+
 .links {
-    align-self: flex-end;
+    align-self: flex-start;
+    margin: 0 0 10px -20px;
+}
+
+.links ul {
+    display: inline-flex;
 }
 
 .links ul li {
@@ -76,6 +158,7 @@ a {
 }
 
 .links img {
+    object-fit: cover;
     margin: 10;
     width: 32px;
     height: 32px;
