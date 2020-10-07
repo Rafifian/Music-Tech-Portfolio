@@ -136,12 +136,13 @@ body {
 
 .content_image {
     flex-grow: 1;
+    position: relative;
 }
 
 .content_image img {
     object-fit: contain;
     height: auto;
-    max-width: 100%;
+    max-width: 350px;
     border: 2px solid #202A25;
     border-radius: 1%;
 }
@@ -154,10 +155,13 @@ body {
 
 .content_header h2 {
     font-size: 30px;
+    margin-bottom: 25px;
 }
 
 .content {
     display: inline-block;
+    font-size: 18px;
+    line-height: 2;
 }
 
 .links {
@@ -172,6 +176,7 @@ body {
 .links ul li {
     list-style: none;
     vertical-align: bottom;
+    margin-right: 20px;
 }
 
 .links img {
