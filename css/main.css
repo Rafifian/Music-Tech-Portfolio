@@ -89,6 +89,7 @@ body {
 
 .menu {
     padding-bottom: 20px;
+    padding-left: 60px;
 }
 
 .menu a {
@@ -220,7 +221,7 @@ body {
 }
 
 .module p > a:hover {
-    color: black;
+    color: #202A25;
 }
 
 .content {
